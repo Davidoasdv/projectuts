@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("img/spanduk.png");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Buka mulai 10.00 sampai 19.00</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px"><br></span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b><br>/b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">LIHAT MENU</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">MAKANAN</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">MINUMAN</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">PENUTUP</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Risol Mayo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3k/pcs</span></h1>
+      <p class="w3-text-grey">Mayonaise, Beef, Telur</p>
+      <hr>
+   
+      <h1><b>Cireng</b> <span class="w3-right w3-tag w3-dark-grey w3-round">2K/pcs</span></h1>
+      <p class="w3-text-grey">Ayam suir, Kornet</p>
+      <hr>
+      
+      <h1><b>Martabak Telur</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5K/pcs</span></h1>
+      <p class="w3-text-grey">Telur, daun bawang, sosis</p>
+      <hr>
+
+      <h1><b>Mie</b> <span class="w3-right w3-tag w3-dark-grey w3-round">7K</span></h1>
+      <p class="w3-text-grey">Mie Goreng/Rebus</p>
+      <hr>
+
+      <h1><b>Martabak Manis</b><span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">20K</span></h1>
+      <p class="w3-text-grey">Coklat, Keju, Kacang, MIX</p>
+      <hr>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Kopi Hitam</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round">4K</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+   
+      <h1><b>Kopi Susu</b> <span class="w3-right w3-tag w3-dark-grey w3-round">4K</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1><b>Nutrisari</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5K</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Teh Manis</b> <span class="w3-right w3-tag w3-dark-grey w3-round">4K</span></h1>
+      <p class="w3-text-grey">Panas/Es</p>
+    </div>
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Puding</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">4K/pcs</span></h1>
+      <p class="w3-text-grey">Coklat, Strawberry, Vanilla</p>
+      <hr>
+   
+      <h1><b>Cake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">7K</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+    </div><br>
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>Warung ini merupakan warung yang didirikan oleh pemiliknya sebagai tempat berkumpul bersama teman, keluarga dan siapapun anda dapat membawanya. Warung ini memiliki varian makanan dan minuman kekinian yang dapat anda pesan</p>
+    <h1><b>Buka</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Setiap Hari</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Temukan kami di maps "Nongkrong Rasa" atau anda dapat menghubungi 021-32342523</p>
+    <p><span class="w3-tag">FYI!</span> Kami menawarkan katering dengan layanan lengkap untuk acara apa pun, besar atau kecil. Kami memahami kebutuhan Anda dan kami akan menyediakan makanan yang memenuhi kriteria terbaik dari semuanya, baik dari segi tampilan maupun rasa.</p>
+    <p class="w3-xxlarge"><strong></strong> Jika ingin datang anda juga dapat melakukan booking agar kami dapat menyediakan kursi khusus anda:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nama" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Jumlah Orang" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Waktu" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">Kirim Pesan</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Nongkrong Rasa</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
